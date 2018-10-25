@@ -39,6 +39,6 @@ class Application
 
   def handle_adding_item(item)
     if @@items.include?(item)
-      "#{item}"
+      @@cart << item
   end
 end
