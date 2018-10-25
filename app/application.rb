@@ -22,6 +22,7 @@ class Application
       end
     elsif req.path.match(/add/)
       item = req.params["item"]
+      resp.write handle_adding_item(item)
     else
       resp.write "Path Not Found"
     end
@@ -42,5 +43,6 @@ class Application
       @@cart << item
     else
       "We don't have that item"
+    end
   end
 end
