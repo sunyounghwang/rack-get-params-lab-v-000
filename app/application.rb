@@ -36,4 +36,8 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
+
+  def handle_adding_item(item)
+    
+  end
 end
