@@ -38,6 +38,7 @@ class Application
   end
 
   def handle_adding_item(item)
-    
+    if @@items.include?(item)
+      "#{item}"
   end
 end
